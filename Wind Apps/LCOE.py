@@ -32,9 +32,3 @@ for y in range(2, years):
 
 LCOE=C_total/E_total
 print(round(LCOE,2))
-
-
-
-
-
-
