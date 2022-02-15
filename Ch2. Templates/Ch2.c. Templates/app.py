@@ -8,11 +8,11 @@ def home():
 
 @app.route('/developers')
 def developers():
-    return render_template('developers', title='developers')
+    return render_template('developers.html', title='developers')
 
 @app.route('/app_calculator')
 def app_calculator():
-    return render_template('app_calculator', title='app_calculator')
+    return render_template('app_calculator.html', title='app_calculator')
 
 if __name__ == '__main__':
     app.run(debug=True)
