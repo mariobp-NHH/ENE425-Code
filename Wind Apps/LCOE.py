@@ -16,12 +16,13 @@ years = 11
 #Discount rate
 r = 1.08 #8%
 
-#Total Cost and total Energy
+#Total Cost and Total Energy (Initialize the variables)
 C_total = EC
 E_total = 0
 
+#Loop to work out Total Cost and Total Energy
 for y in range(2, years):
-    MC_year = IC*(1+(c*(y-2)))
+    MC_year = IC*(1+(c*(y-2))) 
     FC_year = f
     discount_factor = 1/(r**y)
     C_year = (MC_year+FC_year)*discount_factor
