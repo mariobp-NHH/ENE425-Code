@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% if title %}
+            <title>{{ title }}</title>
+        {% else %}
+            <title>home</title>
+        {% endif %}
+    </head>
+    <body>
+
+        <!--Navbar-->
+            <a href="{{ url_for('home') }}">App Calculator</a>
+            <ul>
+              <li>
+                <a href="{{ url_for('home') }}">Home</a>
+              </li>
+              <li>
+                <a href="{{ url_for('app_calculator') }}">App</a>
+              </li>
+            </ul>
+
+        {% block content %} {% endblock %}
+
+        <!-- Footer -->
+
+        <p>Transport Carbon Emissions Calculator App</p>
+
+    </body>
+</html>
