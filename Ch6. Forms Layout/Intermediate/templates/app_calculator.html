@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+    <section class="bg-white p-5 p-lg-5 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            {{ legend }}</br>
+            {{ paragraph }}</br>
+            <form method="POST" action="">
+                {{ form.bus_type.label }}</br>
+                {{ form.bus_type }}</br>
+                {{ form.bus_kms.label }}</br>
+                {{ form.bus_kms }}</br>
+                {{ form.submit }}</br>
+            </form>
+        </div>
+    </section>
+{% endblock content %}
